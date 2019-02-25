@@ -1,0 +1,24 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='voxeet.com.sdk.models.impl']/class[@name='DefaultMeeting']/method[@name='getProfiles' and count(parameter)=0]"
+      name="return">
+    System.Collections.IList
+  </attr>
+  <attr path="/api/package[@name='voxeet.com.sdk.models.impl']/class[@name='DefaultConferenceUser']/method[@name='getProfile']"
+      name="managedReturn">Voxeet.Com.Sdk.Models.Abs.IUserProfile</attr>
+
+
+  <attr path="/api/package[@name='voxeet.com.sdk.models.impl']/class[@name='DefaultMeetingEvent']/method[@name='getMeetingEventType']"
+        name="type">Voxeet.Com.Sdk.Models.Abs.MeetingEventType</attr>
+
+  <attr path="/api/package[@name='voxeet.com.sdk.models.abs']/interface[@name='MeetingEvent']/method[@name='getMeetingEventType' and count(parameter)=0]"
+        name="managedName">MeetingEventType</attr>
+
+
+</metadata>

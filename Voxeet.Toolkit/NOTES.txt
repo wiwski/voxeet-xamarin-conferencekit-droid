@@ -1,0 +1,1 @@
+﻿com.squareup.picasso:picasso:2.71828 - Installed via Nuget : Square.Picasso - 2.5.*

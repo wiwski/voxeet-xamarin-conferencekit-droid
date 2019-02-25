@@ -1,0 +1,29 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+<!-- org.webrtc -->
+  <remove-node path="/api/package[@name='org.webrtc']/class[@name='SessionDescription']/field[@name='type']"></remove-node>
+  <remove-node path="/api/package[@name='org.webrtc']/class[@name='EncodedImage']/field[@name='frameType']"></remove-node>
+  <remove-node path="/api/package[@name='org.webrtc']/class[@name='StatsReport.Value']/field[@name='value']"></remove-node>
+  <!-- Removed but implemented in Additions -->
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='LocalStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCCandidatePairStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCRemoteCandidateStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCCertificateStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCCodecStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCInboundRTPStreamStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCMediaStreamTrackStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCOutboundRTPStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCLocalCandidateStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCPeerConnectionStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCStreamStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='com.voxeet.android.media.stats']/class[@name='RTCTransportStats']/method[@name='toJson' and count(parameter)=0]"></remove-node>
+  
+
+</metadata>

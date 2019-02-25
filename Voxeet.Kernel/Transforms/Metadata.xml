@@ -1,0 +1,42 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.services.holder']/class[@name='ServiceProviderHolder']/field[@name='retrofit']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.services.holder']/class[@name='ServiceProviderHolder']/field[@name='client']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.services.holder']/class[@name='ServiceProviderHolder']/field[@name='eventBus']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.http']/class[@name='RefreshTokenBody']/field[@name='refresh_token']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='ID']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='PASSWORD']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='ACCOUNT_TYPE']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='CONFERENCE_TIMEOUT']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='UPLOAD_TOKEN']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='DEFAULT_ACTIVITY']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.preferences']/class[@name='VoxeetPreferences']/field[@name='LOGIN']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core']/class[@name='VoxeetSdkTemplate']/field[@name='_event_bus']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core']/class[@name='VoxeetSdkTemplate']/field[@name='_application_context']"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.services.authenticate.token']/class[@name='TokenResponseProvider']/field[@name='tokenResponse']"></remove-node>
+
+  <remove-node path="/api/package[@name='com.google.gson.internal.bind']/class[@name='TypeAdapters']/field[@name='CLASS']"></remove-node>
+
+  <attr path="/api/package[@name='com.google.gson']/class[@name='Gson']" name="managedName">BoundGson</attr>
+
+  <attr path="/api/package[@name='voxeet.com.sdk.core.network.websocket']/class[@name='WebSocketProxy']/method[@name='addListener']" name="managedName">AddListner</attr>
+
+  <attr path="/api/package[@name='voxeet.com.sdk.events.promises']/class[@name='PromiseGetConferenceStatusErrorEventException']/constructor[@name='PromiseGetConferenceStatusErrorEventException']/parameter[@type='java.lang.Throwable']"
+        name="name">error</attr>
+
+  <attr path="/api/package[@name='voxeet.com.sdk.core.network.websocket']/interface[@name='SocketListener']/method[@name='onConnect']"
+        name="managedName">OnSocketConnect</attr>
+
+
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.abs']/class[@name='AbstractConferenceSdkObservableProvider']/method[@name='getService' and count(parameter)=0]"></remove-node>
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.abs']/class[@name='AbstractConferenceSdkObservableProvider']/method[@name='setRetrofitInstantiatedProvider']"></remove-node>
+
+  <remove-node path="/api/package[@name='voxeet.com.sdk.core.abs']/class[@name='AbstractConferenceSdkService']/method[@name='onCreateDemoSuccess' and count(parameter)=1 and parameter[1][@type='DemoEvent']]"></remove-node>
+
+</metadata>
